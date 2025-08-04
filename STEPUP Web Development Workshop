@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Christian McGuire Portfolio </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+        href="styles.css">
+    </head>
+    <body>
+        <h1>Christian McGuire</h1>
+        <p>My name is Christian McGuire, I am currently an Aerospace Engineering undergraduate at the University of Florida. I am interested in getting involved in experiential learning; be it through an internship, research, design project, or a lab setting. I am open to exploring and diversifying my interests in aerospace technologies, material science, and professional development through opportunities within and outside of the university.</p>
+        <img src="IMG_1241.jpg" height="256">
+        <h1>Projects</h1>
+    </body>
+    </body>
+</html>
