@@ -1,5 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        h1 {
+        color: white;
+        text-align: center;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .indent {
+            text-indent: 10px;
+        }
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        h4 {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+        .custom-indent {
+            text-align: left;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .line-indent {
+            text-align: left;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .line-unindent {
+            text-align: left;
+            margin-left: -20%;
+            margin-right: -20%;
+        }
+        .about-indent {
+            text-align: left;
+            margin-left: 50%;
+            margin-right: 30%;
+        }
+        .center-indent {
+            text-align: center;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .skill-indent {
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .chal-indent {
+            text-align: left;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .container {
+            display: flex;
+            align-items: left;
+            gap: 10px;
+        }
+        .column {
+            flex: 1;
+        }
+        .column img {
+            width: 40%;
+            height: auto;
+            display: block;
+        }
+        .custom-div {
+            width: 400px;
+            height: 150px;
+        }
+          .tabs {
+        font-family: sans-serif;
+        }
+        .tab-buttons {
+            border-bottom: 2px solid #618cc5;
+            display: flex;
+        }
+        .tab-button {
+            background-color: #f1f1f1;
+            border: 1px solid #618cc5;
+            border-bottom: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        .tab-button:hover {
+            background-color: #7abcf1;
+        }
+        .tab-button.active {
+            background-color: #618cc5;
+            border-bottom: 2px solid #618cc5;
+            position: relative;
+            top: 2px;
+        }
+        .content-panel {
+            display: none;
+            padding: 20px;
+            border: 2px solid #618cc5;
+            border-top: none;
+        }
+        .content-panel.active {
+            display: block;
+        }
+        .header-block {
+            background-color: #00529b;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+
     <head>
         <title> Christian McGuire Portfolio </title>
         <meta charset="utf-8">
@@ -8,59 +131,179 @@
         href="styles.css">
     </head>
     <body>
-        <h1>Christian McGuire</h1>
-        <div><p>| Undergraduate Aerospace Engineering Student at the University of Florida |</p></div>
-        <h2>About Me</h2>
-        <p>My name is Christian McGuire, I am currently an Aerospace Engineering undergraduate at the University of Florida. I am interested in getting involved in experiential learning; be it through an internship, research, design project, or a lab setting. I am open to exploring and diversifying my interests in aerospace technologies, material science, and professional development through opportunities within and outside of the university.</p>
-        <img src="IMG_1241.JPG" height="256" alt="Christian McGuire" class="center">
-        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
-        </svg>
-        <h2>Technical Skills</h2>
-            <h3>Acquired Skills:</h3>
-            <p>Autodesk CAD Modeling | Automotive Repair | Engineering Design</p>
-            <h3>Certificates:</h3>
-            <p>NVIDIA Deep Learning | Autodesk | USI sUAS Systems | Servsafe Food Manager | Ford Technical Training</p>
-            <h3>Soft Skills:</h3>
-            <p>JROTC Leadership | Service Oriented | Customer Experience | Crowd Control</p>
-        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
-        </svg>
-        <h2>Experience</h2>
-            <h3>STEPUP Program Mentee</h3>
-            <p>•	Cooperated and professionally developed the STEPUP31 family of incoming first-year students. Participated in professional & personal workshops, academic classes, corporate events, experiential learning, and conversed with a host of influential speakers.</p>
-            <h3>JROTC Battalion Commander</h3>
-            <p>•	Commanded a 100+ cadet program’s involvement in school affairs and throughout the community</p>
-            <p>•	Facilitated a command team tasked with rebuilding a JROTC program from scratch</p>
-            <p>•	Promoted personal growth within cadets and operated two county-wide events</p>
-            <h3>National Honors Society Vice President</h3>
-            <p>•	Planned, lead, and operated a quarterly blood drive</p>
-            <p>•	Marketed & collected enough donations to save 120 lives on average per drive</p>
-            <p>•	Developed and operated a model blood drive collection system for the Seminole County area</p>
-        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
-        </svg>
-        <h2>Projects</h2>
-            <h3>Arduino Gas Meter</h3>
-            <p>To solve the unreliability of my factory gas gauge –float getting stuck, fluid slosh in turns, corroded grounds– I designed a fuel metering system that would provide me a digital display of my remaining gallons to the hundredth. Using a micro hall effect meter inserted into the rubber line of my fuel tank, an Arduino Uno would calibrate, calculate, and display the remaining fuel on a SSD.</p>
-            <p>•	Challenges: Had to learn coding; develop a system to store data after power is cut; locating the radio constant voltage wire; fuel line restriction; display switch; integration into the wiring harness</p>
-            <h3>RC Aircraft</h3>
-            <p>Designed, built, trimmed, and flew my own foamboard aircraft. Learned the basics of radio frequencies, electrical components required for flight –servo motors, ESC, brushless motors, recievers–, and the basics of aircraft design and proportions. Fostering my interest in aerospace and small scale systems.</p>
-            <p>•	Challenges: Manufacturing accuracy and build quality; understanding CG, chord ratio, counter torque correction, exponentiation of input / output relationship; pilot skills</p>
-        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
-        </svg>
-        <h2>Awards & Distinctions</h2>
-        <p>•	Embraer UAS Design Competition Winner</p>
-        <p>•	USA Fencing - All Academic First Team</p>
-        <p>•	JROTC Senior Army Instructor</p>
-        <p>•	Florida Engineering Society High School Scholarship Recipient</p>
-        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
-        </svg>
-        <h2>Contact Information</h2>
-        <p>Email: cj.mcguire@ufl.edu</p>
-        <p>Phone: (407) 961-9805</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-mcguire/">https://www.linkedin.com/in/christian-mcguire/</a></p>
+        <div class="header-block">
+            <h1>Christian McGuire</h1>
+            <h4 class="center-indent">| Undergraduate Aerospace Engineering Student at the University of Florida |</h4>
+        </div>
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'About-Me')">About Me</button>
+            <button class="tab-button" onclick="openTab(event, 'Technical-Skills')">Technical Skills</button>
+            <button class="tab-button" onclick="openTab(event, 'Experience')">Experience</button>
+            <button class="tab-button" onclick="openTab(event, 'Projects')">Projects</button>
+        </div>
+        
+
+        <div id="About-Me" class="content-panel active">
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="column">
+                    <div class="about-indent">    
+                        <h2>About Me</h2>
+                        <div class="custom-div">
+                            <p>My name is Christian McGuire, I am currently an Aerospace Engineering undergraduate at the University of Florida. I am interested in getting involved in experiential learning; be it through an internship, research, design project, or a lab setting. I am open to exploring and diversifying my interests in aerospace technologies, material science, and professional development through opportunities within and outside of the university.</p>
+                            <div class="line-unindent">
+                                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0" y1="0" x2="500" y2="0" style="stroke:black;stroke-width:2" />
+                                </svg>
+                            </div>
+                            <h2>Contact Information</h2>
+                            <p>Email: cj.mcguire@ufl.edu</p>
+                            <p>Phone: (407) 961-9805</p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-mcguire/">Christian McGuire</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="IMG_1241.jpg">
+                </div>
+            </div>
+        
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+            <div class="custom-indent">
+                <h2>Awards & Distinctions</h2>
+                <p>•	Embraer UAS Design Competition Winner</p>
+                <p>•	USA Fencing - All Academic First Team</p>
+                <p>•	JROTC Senior Army Instructor</p>
+                <p>•	Florida Engineering Society High School Scholarship Recipient</p>
+            </div>
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+            
+        </div>
+
+
+        <div id="Technical-Skills" class="content-panel">
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+            <div class="custom-indent">    
+                <h2>Technical Skills</h2>
+                <h3>Acquired Skills:</h3>
+                <div class="skill-indent">
+                    <p>Autodesk CAD Modeling | Automotive Repair | Engineering Design</p>
+                </div>
+                <h3>Certificates:</h3>
+                <div class="skill-indent">
+                    <p>NVIDIA Deep Learning | Autodesk | USI sUAS Systems | Servsafe Food Manager | Ford Technical Training</p>
+                </div>
+                <h3>Soft Skills:</h3>
+                <div class="skill-indent">
+                    <p>JROTC Leadership | Service Oriented | Customer Experience | Crowd Control</p>
+                </div>
+            </div>
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+        </div>
+
+
+        <div id="Experience" class="content-panel">
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+            <div class="custom-indent">    
+                <h2>Experience</h2>
+                <h3>STEPUP Program Mentee</h3>
+                <div class="skill-indent">
+                <p>•	Cooperated and professionally developed the STEPUP31 family of incoming first-year students</p>
+                <p>•	Participated in professional & personal workshops, academic classes, corporate events, experiential learning, and conversed with a host of influential speakers.</p>
+                </div>
+                <h3>JROTC Battalion Commander</h3>
+                <div class="skill-indent">
+                <p>•	Commanded a 100+ cadet program’s involvement in school affairs and throughout the community</p>
+                <p>•	Facilitated a command team tasked with rebuilding a JROTC program from scratch</p>
+                <p>•	Promoted personal growth within cadets and operated two county-wide events</p>
+                </div>
+                <h3>National Honors Society Vice President</h3>
+                <div class="skill-indent">
+                <p>•	Planned, lead, and operated a quarterly blood drive</p>
+                <p>•	Marketed & collected enough donations to save 120 lives on average per drive</p>
+                <p>•	Developed and operated a model blood drive collection system for the Seminole County area</p>
+                </div>
+            </div>
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+        </div>
+
+
+        <div id="Projects" class="content-panel">
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+            <div class="custom-indent">    
+                <h2>Projects</h2>
+                <h3>Arduino Gas Meter</h3>
+                <div class="skill-indent">
+                    <p>To solve the unreliability of my factory gas gauge –float getting stuck, fluid slosh in turns, corroded grounds– I designed a fuel metering system that would provide me a digital display of my remaining gallons to the hundredth. Using a micro hall effect meter inserted into the rubber line of my fuel tank, an Arduino Uno would calibrate, calculate, and display the remaining fuel on a SSD.</p>
+                    <div class="chal-indent">
+                        <p>•	Challenges: Had to learn coding; develop a system to store data after power is cut; locating the radio constant voltage wire; fuel line restriction; display switch; integration into the wiring harness</p>
+                    </div>
+                </div>
+                <h3>RC Aircraft</h3>
+                <div class="skill-indent">
+                    <p>Designed, built, trimmed, and flew my own foamboard aircraft. Learned the basics of radio frequencies, electrical components required for flight –servo motors, ESC, brushless motors, recievers–, and the basics of aircraft design and proportions. Fostering my interest in aerospace and small scale systems.</p>
+                    <div class="chal-indent">
+                        <p>•	Challenges: Manufacturing accuracy and build quality; understanding CG, chord ratio, counter torque correction, exponentiation of input / output relationship; pilot skills</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line-indent">
+                <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="0" x2="2000" y2="0" style="stroke:black;stroke-width:2" />
+                </svg>
+            </div>
+        </div>
+
+
+
+        
+        
+    <script>
+        function openTab(evt, cityName) {
+        let contentPanels = document.getElementsByClassName("content-panel");
+        for (let i = 0; i < contentPanels.length; i++) {
+            contentPanels[i].style.display = "none";
+        }
+        let tabButtons = document.getElementsByClassName("tab-button");
+        for (let i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+    </script>
+    
     </body>
 </html>

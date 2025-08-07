@@ -1,0 +1,64 @@
+        
+        <div class="container">
+            <div class="column">
+                <h2>About Me</h2>
+                <div class="custom-div">
+                    <p>My name is Christian McGuire, I am currently an Aerospace Engineering undergraduate at the University of Florida. I am interested in getting involved in experiential learning; be it through an internship, research, design project, or a lab setting. I am open to exploring and diversifying my interests in aerospace technologies, material science, and professional development through opportunities within and outside of the university.</p>
+                </div>
+            </div>
+            <div class="column">
+                <img src="IMG_1241.jpg">
+            </div>
+        </div>
+        
+        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
+        </svg>
+        <h2>Technical Skills</h2>
+            <h3>Acquired Skills:</h3>
+            <p>Autodesk CAD Modeling | Automotive Repair | Engineering Design</p>
+            <h3>Certificates:</h3>
+            <p>NVIDIA Deep Learning | Autodesk | USI sUAS Systems | Servsafe Food Manager | Ford Technical Training</p>
+            <h3>Soft Skills:</h3>
+            <p>JROTC Leadership | Service Oriented | Customer Experience | Crowd Control</p>
+        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
+        </svg>
+        <h2>Experience</h2>
+            <h3>STEPUP Program Mentee</h3>
+            <p>•	Cooperated and professionally developed the STEPUP31 family of incoming first-year students. Participated in professional & personal workshops, academic classes, corporate events, experiential learning, and conversed with a host of influential speakers.</p>
+            <h3>JROTC Battalion Commander</h3>
+            <p>•	Commanded a 100+ cadet program’s involvement in school affairs and throughout the community</p>
+            <p>•	Facilitated a command team tasked with rebuilding a JROTC program from scratch</p>
+            <p>•	Promoted personal growth within cadets and operated two county-wide events</p>
+            <h3>National Honors Society Vice President</h3>
+            <p>•	Planned, lead, and operated a quarterly blood drive</p>
+            <p>•	Marketed & collected enough donations to save 120 lives on average per drive</p>
+            <p>•	Developed and operated a model blood drive collection system for the Seminole County area</p>
+        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
+        </svg>
+        <h2>Projects</h2>
+            <h3>Arduino Gas Meter</h3>
+            <p>To solve the unreliability of my factory gas gauge –float getting stuck, fluid slosh in turns, corroded grounds– I designed a fuel metering system that would provide me a digital display of my remaining gallons to the hundredth. Using a micro hall effect meter inserted into the rubber line of my fuel tank, an Arduino Uno would calibrate, calculate, and display the remaining fuel on a SSD.</p>
+            <p>•	Challenges: Had to learn coding; develop a system to store data after power is cut; locating the radio constant voltage wire; fuel line restriction; display switch; integration into the wiring harness</p>
+            <h3>RC Aircraft</h3>
+            <p>Designed, built, trimmed, and flew my own foamboard aircraft. Learned the basics of radio frequencies, electrical components required for flight –servo motors, ESC, brushless motors, recievers–, and the basics of aircraft design and proportions. Fostering my interest in aerospace and small scale systems.</p>
+            <p>•	Challenges: Manufacturing accuracy and build quality; understanding CG, chord ratio, counter torque correction, exponentiation of input / output relationship; pilot skills</p>
+        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
+        </svg>
+        <h2>Awards & Distinctions</h2>
+        <p>•	Embraer UAS Design Competition Winner</p>
+        <p>•	USA Fencing - All Academic First Team</p>
+        <p>•	JROTC Senior Army Instructor</p>
+        <p>•	Florida Engineering Society High School Scholarship Recipient</p>
+        <svg height="1" width="1000" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:2" />
+        </svg>
+        <h2>Contact Information</h2>
+        <p>Email: cj.mcguire@ufl.edu</p>
+        <p>Phone: (407) 961-9805</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-mcguire/">https://www.linkedin.com/in/christian-mcguire/</a></p>
+    </body>
+</html>
